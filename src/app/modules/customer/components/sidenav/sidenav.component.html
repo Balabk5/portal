@@ -1,22 +1,114 @@
-<nav class="sidenav">
-  <div class="cont1">
-    <div class="cust-logo">
-        <img src="/assets/images/customerportallogo.png" alt="" class="cust-logo-img">
-    </div>
-    
-    <h1 class="hed-main">Customer Portal</h1>
-  </div>
+<html>
 
-  <ul class="list-items">
-    <li><a href="#" [routerLink]="'/customer/Profile'"><i class="fa-solid fa-user"></i>Profile</a></li>
-    <li><a href="#" [routerLink]="'/customer/Inquirydata'"><i class="fa-solid fa-magnifying-glass"></i>Inquiry data</a></li>
-    <li><a href="#" [routerLink]="'/customer/saleOrder'"><i class="fa-solid fa-chart-line"></i>Sales Order data</a></li>
-    <li><a href="#" [routerLink]="'/customer/listOfDelivery'"><i class="fa-solid fa-truck"></i>List of Delivery</a></li>
-    <li><a href="#" [routerLink]="'/customer/financesheet'"><i class="fa-solid fa-chart-pie"></i>Finance Sheet</a></li>
-    
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: #e2e2e2;">
+  <!-- <ul>
+                <li><a href="">Help</a></li>
+            </ul> -->
+  <!-- <div class="header">
+                
+                <div class="header-right">
+                  <a href=""><img src="https://chefhci.files.wordpress.com/2014/12/lgout.png"height="10%" width="10%"alt=""></a>
+                </div>
+              </div> -->
+
+  <div class="area"></div>
+  <nav class="main-menu">
+    <ul>
+      <li>
+        <a routerLink="/dashboard">
+          <i class=" fa-2x"></i>
+          <span class="nav-text" style="padding-left: 20px;width: 230px;font-size: larger;">
+            CUSTOMER PORTAL
+          </span>
+        </a>
+
+      </li>
+      <li>
+        <a routerLink="/dashboard">
+          <i class="fa fa-address-card fa-2x"></i>
+          <span class="nav-text">
+            <!-- Customer Profile -->
+            <div class="subnav">
+              <a routerLink="/dashboard" class="subnavbtn">Customer Profile</a>
+              <div class="subnav-content">
+                <a routerLink="/profile-view">View Profile</a>
+                <a routerLink="/profile-edit">Edit Profile</a>
+
+              </div>
+            </div>
+
+          </span>
+        </a>
+
+      </li>
+      <li class="has-subnav">
+        <a routerLink="/dashboard">
+          <i class="fa fa-laptop fa-2x"></i>
+          <span class="nav-text">
+
+            <div class="subnav">
+              <a routerLink="/dashboard" class="subnavbtn">Dashboard</a>
+              <div class="subnav-content">
+                <a routerLink="/inquiry"> Inquiry Data </a>
+                <a routerLink="/salesorder">Sales Order</a>
+                <a routerLink="/delivery">Delivery List</a>
+
+              </div>
+            </div>
+          </span>
+        </a>
+
+      </li>
+      <li class="has-subnav">
+        <a routerLink="/dashboard">
+          <i class="fa fa-cogs fa-2x"></i>
+          <span class="nav-text">
+
+            <div class="subnav">
+              <a routerLink="/dashboard" class="subnavbtn">Finance Sheet</a>
+              <div class="subnav-content">
+                <a routerLink="/invoice">Invoice Data</a>
+                <a routerLink="/payment-aging">Payment Aging</a>
+                <a routerLink="/credit-debit">Credit / Debit</a>
+                <a routerLink="/overall-sales">Overall Sales</a>
+              </div>
+            </div>
+          </span>
+        </a>
+
+      </li>
+
+      <li>
+        
+          
+        
+      </li>
+
     </ul>
-    
-  <div class="list-items logout">
-    <li><a href="#" [routerLink]="'/landingPage'"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
-  </div>
-</nav>
+
+    <ul class="logout">
+      <li>
+        <a href="#" >
+          <i class="fa fa-power-off fa-2x"></i>
+          <span class="nav-text">
+            Logout
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <img src="https://www.freshersvoice.com/wp-content/uploads/2020/10/Kaar-Technologies-Off-Campus.png" alt="kaar"
+    style="width: 100%;height: 100%;filter: brightness(90%);">
+
+</body>
+
+</html>
