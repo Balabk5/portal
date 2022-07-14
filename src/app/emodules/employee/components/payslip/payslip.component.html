@@ -1,0 +1,42 @@
+
+<div class="finance__describ">
+    <h1>PaySlip</h1>
+    
+  </div>
+  
+  <input type="button"  value="Download PDF" class="Download__btn" >  
+  <div class="table__cont">
+  <div  style="margin: 5%;">
+      
+      <table >
+        <thead >
+          <tr>
+  
+            <th>For period payroll</th>
+            <th>Start date</th>
+            <th>Sequence number </th>
+            <th>End date</th>
+            <th >Offcycle payroll date </th>
+            <th>Pay date</th>
+            <th>Payroll type</th>
+            
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of payslip " >
+            <td>{{chs.FPPERIOD._text}}</td>
+            <td>{{chs.FPBEGIN._text}}</td>
+            <td>{{chs.SEQUENCENUMBER._text}}</td>
+            <td>{{chs.FPEND._text}}</td>
+            <td>{{chs.BONUSDATE._text}}</td>
+            <td> <mark>{{chs.PAYDATE._text}}</mark> </td>
+            <td>{{chs.PAYTYPE_TEXT._text}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="dummy"></div>
+  </div>
+  
+  
